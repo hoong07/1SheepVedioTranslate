@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "1Sheep Translator Extension",
+    "version": "1.0.0",
+    "description": "1Sheep Translator Extension",
+    "action": {
+      "default_popup": "index.html"
+    },
+    "permissions": []
+  }
