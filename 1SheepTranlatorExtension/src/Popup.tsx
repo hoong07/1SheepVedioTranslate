@@ -1,6 +1,6 @@
 const Popup = () => {
     return (
-        <div>
+        <div className="p-3">
             <h1 className="mx-auto text-center text-xl font-bold">1Sheep Translator Extension</h1>
             <div className="mx-auto w-3xs space-y-2">
                 <section className="space-y-2">
@@ -9,7 +9,7 @@ const Popup = () => {
                 </section>
 
                 <section className="flex justify-between space-y-2">
-                    <label htmlFor="language">目标语言</label>
+                    <label htmlFor="language">目标语言:</label>
                     <select name="language" id="language" >
                     <option value="zh-CN" className="text-gray-500">中文</option>
                         <option value="en-US" className="text-gray-500">英文</option>

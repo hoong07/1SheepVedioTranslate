@@ -7,9 +7,8 @@ import { crx } from '@crxjs/vite-plugin'
 
 // https://vite.dev/config/
 export default defineConfig({
-  server: {
-    port: 5174,
-    host: true,
-  },
-  plugins: [react(), tailwindcss(),crx({ manifest })],
+  plugins: [
+    react(), 
+    tailwindcss(),
+    crx({ manifest })],
 })

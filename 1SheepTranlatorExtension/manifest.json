@@ -3,8 +3,48 @@
     "name": "1Sheep Translator Extension",
     "version": "1.0.0",
     "description": "1Sheep Translator Extension",
+    "author": {
+      "name": "1Sheep",
+      "email": "1684851991@qq.com"
+    },
     "action": {
+      "default_icon": {
+        "16" : "icon.png",
+        "32" : "icon.png",
+        "48" : "icon.png",
+        "64" : "icon.png",
+        "128" : "icon.png"
+      } ,
       "default_popup": "index.html"
     },
-    "permissions": []
+    "permissions": [],
+    "icons": {
+      "16" : "icon.png",
+      "32" : "icon.png",
+      "48" : "icon.png",
+      "64" : "icon.png",
+      "128" : "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "exclude_maches": [],
+        "include_globs": [],
+        "exclude_globs": [],
+
+        "js": [
+          "src/content/content.ts"
+        ],
+
+        "all_frames": false,
+        "run_at":"document_end",
+        "match_about_blank": false,
+        "world": "ISOLATED"
+      }
+    ],
+    "background": {
+      "service_worker": "src/background/service-worker.ts"
+    }
   }
