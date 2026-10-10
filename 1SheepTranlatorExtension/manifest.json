@@ -7,6 +7,7 @@
       "name": "1Sheep",
       "email": "1684851991@qq.com"
     },
+    "permissions": ["storage"],
     "action": {
       "default_icon": {
         "16" : "icon.png",
@@ -17,7 +18,6 @@
       } ,
       "default_popup": "index.html"
     },
-    "permissions": [],
     "icons": {
       "16" : "icon.png",
       "32" : "icon.png",
@@ -28,7 +28,7 @@
     "content_scripts": [
       {
         "matches": [
-          "<all_urls>"
+          "https://www.bilibili.com/video/*"
         ],
         "exclude_maches": [],
         "include_globs": [],
